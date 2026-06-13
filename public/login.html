@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Log in — Website Builder Studio</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="/css/app.css">
+</head>
+<body class="auth-page">
+  <div class="auth-card">
+    <div class="brand-logo"><span class="mark">W</span> Builder Studio</div>
+    <h1>Welcome back</h1>
+    <p class="subtitle">Log in to keep building your website.</p>
+
+    <div class="form-error" id="formError"></div>
+
+    <form id="loginForm">
+      <div class="form-field">
+        <label for="email">Email</label>
+        <input type="email" id="email" required autocomplete="email" placeholder="you@example.com">
+      </div>
+      <div class="form-field">
+        <label for="password">Password</label>
+        <input type="password" id="password" required autocomplete="current-password" placeholder="••••••••">
+      </div>
+      <button class="btn btn-primary btn-block" type="submit">Log in</button>
+    </form>
+
+    <p class="switch-link">Don't have an account? <a href="/signup.html">Sign up for free</a></p>
+  </div>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/auth.js"></script>
+</body>
+</html>

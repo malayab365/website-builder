@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Builder — Website Builder Studio</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="/css/app.css">
+<link rel="stylesheet" href="/css/themes.css">
+<link rel="stylesheet" href="/css/components.css">
+</head>
+<body>
+
+<div class="builder-app">
+  <header class="topbar">
+    <div class="topbar-left">
+      <a href="/dashboard.html" class="brand-logo" title="Back to dashboard"><span class="mark">W</span></a>
+      <input id="projectNameInput" class="project-name-input" placeholder="Untitled project" maxlength="60">
+      <span class="save-status" id="saveStatus"></span>
+    </div>
+    <div class="topbar-right">
+      <button id="previewBtn" class="btn btn-secondary btn-sm" type="button">Preview</button>
+      <button id="downloadBtn" class="btn btn-primary btn-sm" type="button">Download HTML</button>
+      <div class="account-menu">
+        <div class="account-pill" id="accountPill">
+          <span class="avatar" id="avatarInitial">?</span>
+          <span id="accountName">Account</span>
+        </div>
+        <div class="account-dropdown" id="accountDropdown">
+          <a href="/dashboard.html">Dashboard</a>
+          <button id="logoutBtn" type="button">Log out</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="builder-body">
+    <aside class="sidebar">
+      <div class="sidebar-tabs">
+        <button class="sidebar-tab active" data-tab="add" type="button">Add</button>
+        <button class="sidebar-tab" data-tab="templates" type="button">Templates</button>
+        <button class="sidebar-tab" data-tab="design" type="button">Design</button>
+      </div>
+      <div class="sidebar-panel active" data-panel="add" id="panelAdd"></div>
+      <div class="sidebar-panel" data-panel="templates" id="panelTemplates"></div>
+      <div class="sidebar-panel" data-panel="design" id="panelDesign"></div>
+    </aside>
+
+    <div class="canvas-wrapper">
+      <div class="canvas" id="canvas"></div>
+    </div>
+
+    <aside class="property-panel" id="propertyPanel">
+      <div class="property-empty">Select any section on the page to edit its background, spacing and alignment.</div>
+    </aside>
+  </div>
+</div>
+
+<!-- Image picker modal -->
+<div class="modal-overlay hidden" id="imageModalOverlay">
+  <div class="modal">
+    <div class="modal-header">
+      <h2>Choose an image</h2>
+      <button class="modal-close" id="imageModalClose" type="button">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="image-tabs" id="imageTabs"></div>
+      <div class="image-grid" id="imageGrid"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Paywall modal -->
+<div class="modal-overlay hidden" id="paywallOverlay">
+  <div class="modal modal-sm">
+    <div class="modal-header">
+      <h2>Unlock your download</h2>
+      <button class="modal-close" id="paywallClose" type="button">✕</button>
+    </div>
+    <div class="modal-body" id="paywallBody"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="/js/api.js"></script>
+<script src="/js/images.js"></script>
+<script src="/js/themes.js"></script>
+<script src="/js/components.js"></script>
+<script src="/js/templates.js"></script>
+<script src="/js/export.js"></script>
+<script src="/js/builder.js"></script>
+</body>
+</html>

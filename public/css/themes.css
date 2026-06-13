@@ -1,0 +1,204 @@
+/* ==========================================================================
+   Color Themes
+   Each theme defines a consistent set of CSS custom properties that the
+   component library (components.css) and the builder both consume.
+   Apply a theme by adding `theme-<id>` as a class on <body> (or the
+   site preview root).
+   ========================================================================== */
+
+:root {
+  --color-primary: #2563eb;
+  --color-primary-dark: #1d4ed8;
+  --color-secondary: #0ea5e9;
+  --color-accent: #f59e0b;
+  --color-bg: #ffffff;
+  --color-surface: #f8fafc;
+  --color-text: #0f172a;
+  --color-text-muted: #64748b;
+  --color-border: #e2e8f0;
+  --color-on-primary: #ffffff;
+  --gradient: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+
+  --font-heading: 'Inter', -apple-system, sans-serif;
+  --font-body: 'Inter', -apple-system, sans-serif;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 8px 24px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 16px 48px rgba(15, 23, 42, 0.12);
+}
+
+/* 1. Ocean Breeze - calm blues & teals, great for SaaS/tech */
+.theme-ocean {
+  --color-primary: #2563eb;
+  --color-primary-dark: #1e40af;
+  --color-secondary: #06b6d4;
+  --color-accent: #f59e0b;
+  --color-bg: #ffffff;
+  --color-surface: #f0f7ff;
+  --color-text: #0f172a;
+  --color-text-muted: #5b6b82;
+  --color-border: #dbe6f5;
+  --color-on-primary: #ffffff;
+}
+
+/* 2. Sunset Glow - warm oranges & pinks, great for creative/agency */
+.theme-sunset {
+  --color-primary: #f97316;
+  --color-primary-dark: #c2410c;
+  --color-secondary: #ec4899;
+  --color-accent: #facc15;
+  --color-bg: #fffaf5;
+  --color-surface: #fff1e6;
+  --color-text: #341c12;
+  --color-text-muted: #8a6a5b;
+  --color-border: #fbe0cc;
+  --color-on-primary: #ffffff;
+}
+
+/* 3. Forest Canopy - rich greens, great for eco/wellness/outdoors */
+.theme-forest {
+  --color-primary: #15803d;
+  --color-primary-dark: #166534;
+  --color-secondary: #84cc16;
+  --color-accent: #f59e0b;
+  --color-bg: #fbfdf9;
+  --color-surface: #eef7ec;
+  --color-text: #14241a;
+  --color-text-muted: #5c705f;
+  --color-border: #d8ead9;
+  --color-on-primary: #ffffff;
+}
+
+/* 4. Royal Velvet - deep purples, great for premium/luxury brands */
+.theme-royal {
+  --color-primary: #7c3aed;
+  --color-primary-dark: #5b21b6;
+  --color-secondary: #c026d3;
+  --color-accent: #fbbf24;
+  --color-bg: #fdfbff;
+  --color-surface: #f4eefe;
+  --color-text: #1e1531;
+  --color-text-muted: #6c6280;
+  --color-border: #e6dbfb;
+  --color-on-primary: #ffffff;
+}
+
+/* 5. Midnight Pro - dark mode, great for tech/SaaS/portfolios */
+.theme-midnight {
+  --color-primary: #6366f1;
+  --color-primary-dark: #4338ca;
+  --color-secondary: #22d3ee;
+  --color-accent: #f472b6;
+  --color-bg: #0b1220;
+  --color-surface: #131c30;
+  --color-text: #e7ecf7;
+  --color-text-muted: #93a1bd;
+  --color-border: #25324a;
+  --color-on-primary: #ffffff;
+}
+
+/* 6. Monochrome Studio - black, white & grays, great for portfolios */
+.theme-mono {
+  --color-primary: #111827;
+  --color-primary-dark: #000000;
+  --color-secondary: #6b7280;
+  --color-accent: #ef4444;
+  --color-bg: #ffffff;
+  --color-surface: #f4f4f5;
+  --color-text: #111827;
+  --color-text-muted: #6b7280;
+  --color-border: #e5e7eb;
+  --color-on-primary: #ffffff;
+}
+
+/* 7. Berry Punch - vivid magenta/red, great for bold consumer brands */
+.theme-berry {
+  --color-primary: #db2777;
+  --color-primary-dark: #9d174d;
+  --color-secondary: #f43f5e;
+  --color-accent: #fde047;
+  --color-bg: #fffafb;
+  --color-surface: #fdeef4;
+  --color-text: #2b0f1c;
+  --color-text-muted: #876775;
+  --color-border: #f8d7e4;
+  --color-on-primary: #ffffff;
+}
+
+/* 8. Corporate Slate - navy & gray, great for B2B/finance/consulting */
+.theme-corporate {
+  --color-primary: #1e3a8a;
+  --color-primary-dark: #14245c;
+  --color-secondary: #475569;
+  --color-accent: #0ea5e9;
+  --color-bg: #ffffff;
+  --color-surface: #f1f5f9;
+  --color-text: #0f172a;
+  --color-text-muted: #5d6b7e;
+  --color-border: #e2e8f0;
+  --color-on-primary: #ffffff;
+}
+
+/* 9. Pastel Dream - soft pastels, great for lifestyle/baby/beauty */
+.theme-pastel {
+  --color-primary: #a78bfa;
+  --color-primary-dark: #7c5ce6;
+  --color-secondary: #67e8f9;
+  --color-accent: #fda4af;
+  --color-bg: #fffefb;
+  --color-surface: #f6f3ff;
+  --color-text: #3a3450;
+  --color-text-muted: #8b85a3;
+  --color-border: #ece6fb;
+  --color-on-primary: #ffffff;
+}
+
+/* 10. Earth & Clay - warm browns/terracotta, great for food/craft brands */
+.theme-earth {
+  --color-primary: #b45309;
+  --color-primary-dark: #7c2d12;
+  --color-secondary: #65a30d;
+  --color-accent: #facc15;
+  --color-bg: #fdfaf6;
+  --color-surface: #f6ede1;
+  --color-text: #2e2014;
+  --color-text-muted: #8a7763;
+  --color-border: #ecdfcd;
+  --color-on-primary: #ffffff;
+}
+
+/* 11. Vibrant Coral - coral & teal pop, great for startups/apps */
+.theme-coral {
+  --color-primary: #fb5d5d;
+  --color-primary-dark: #d63d3d;
+  --color-secondary: #14b8a6;
+  --color-accent: #fbbf24;
+  --color-bg: #fffdfb;
+  --color-surface: #fff1f0;
+  --color-text: #2c1414;
+  --color-text-muted: #8a6d6d;
+  --color-border: #fbdcd9;
+  --color-on-primary: #ffffff;
+}
+
+/* 12. Mint Fresh - mint green & white, great for health/wellness/clean tech */
+.theme-mint {
+  --color-primary: #10b981;
+  --color-primary-dark: #047857;
+  --color-secondary: #38bdf8;
+  --color-accent: #fb923c;
+  --color-bg: #fbfffd;
+  --color-surface: #ecfdf5;
+  --color-text: #10241c;
+  --color-text-muted: #5e7b71;
+  --color-border: #d3f3e6;
+  --color-on-primary: #ffffff;
+}
+
+/* Re-derive gradient automatically for every theme */
+[class*="theme-"] {
+  --gradient: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+}

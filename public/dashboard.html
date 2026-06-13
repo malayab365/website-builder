@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard — Website Builder Studio</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+
+<header class="dashboard-header">
+  <a href="/dashboard.html" class="brand-logo"><span class="mark">W</span> Builder Studio</a>
+  <div class="account-menu">
+    <div class="account-pill" id="accountPill">
+      <span class="avatar" id="avatarInitial">?</span>
+      <span id="accountName">Account</span>
+    </div>
+    <div class="account-dropdown" id="accountDropdown">
+      <a href="/">Home</a>
+      <button id="logoutBtn" type="button">Log out</button>
+    </div>
+  </div>
+</header>
+
+<div class="dashboard-body">
+  <h1>Your websites</h1>
+  <p class="subtitle">Pick up where you left off, or start something new.</p>
+
+  <div class="project-grid" id="projectGrid">
+    <button class="new-project-card" id="newProjectBtn" type="button">
+      <span class="plus">+</span>
+      <span>New website</span>
+    </button>
+  </div>
+</div>
+
+<!-- Template gallery modal -->
+<div class="modal-overlay hidden" id="templateModalOverlay">
+  <div class="modal">
+    <div class="modal-header">
+      <h2>Choose a starting point</h2>
+      <button class="modal-close" id="templateModalClose" type="button">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="template-grid" id="templateGrid"></div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="/js/api.js"></script>
+<script src="/js/images.js"></script>
+<script src="/js/themes.js"></script>
+<script src="/js/components.js"></script>
+<script src="/js/templates.js"></script>
+<script src="/js/dashboard.js"></script>
+</body>
+</html>
